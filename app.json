@@ -1,30 +1,43 @@
 {
   "expo": {
-    "name": "quiethour",
+    "name": "QuietHour",
     "slug": "quiethour",
+    "scheme": "quiethour",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f7f1e7"
     },
     "ios": {
+      "bundleIdentifier": "com.quiethour.app",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.quiethour.app",
+      "versionCode": 8,
+      "usesCleartextTraffic": true,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#f7f1e7"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [],
+    "extra": {
+      "apiBaseUrl": "http://192.168.18.13:4000",
+      "eas": {
+        "projectId": "8b49822f-94cf-4d86-8d05-22a285d59b9f"
+      }
+    },
+    "owner": "anas_nizam"
   }
 }
