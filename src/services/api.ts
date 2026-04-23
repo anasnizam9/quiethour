@@ -9,6 +9,7 @@ const offlineReviewsByPlace = new Map<string, PlaceReview[]>();
 const offlineSuggestions: NewSpotSuggestion[] = [];
 
 function getApiBaseUrl(): string {
+  return 'https://quiethourbackend-production.up.railway.app';
   const envBaseUrl = process.env.EXPO_PUBLIC_API_BASE_URL?.trim();
   const extraBaseUrl =
     (typeof Constants.expoConfig?.extra?.apiBaseUrl === 'string'
